@@ -1,5 +1,4 @@
 <#ftl encoding="utf-8">
-<#import "/spring.ftl" as spring>
 <!DOCTYPE html>
 <html>
 <head>

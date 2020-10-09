@@ -29,6 +29,7 @@
                 </select>
             </div>
 
+            <h3>Equipment to be rented</h3>
             <#list equipment as eqp>
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" id="equipment" type="checkbox" name="equipment" value="${eqp.id}">

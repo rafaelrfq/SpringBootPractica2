@@ -5,9 +5,6 @@ import edu.pucmm.eict.alquiler.repositories.UserRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.MessageSource;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.support.ResourceBundleMessageSource;
 
 @SpringBootApplication
 public class AlquilerApplication {
@@ -22,13 +19,5 @@ public class AlquilerApplication {
             System.out.println("User exists");
         } else { userRepository.save(user); }
 
-    }
-
-    @Bean
-    public MessageSource messageSource() {
-        ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
-        messageSource.setBasename("messages");
-        messageSource.setDefaultEncoding("UTF-8");
-        return messageSource;
     }
 }
